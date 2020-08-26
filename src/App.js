@@ -39,7 +39,7 @@ export default function App() {
   },[])
 
   return (
-    <div>
+    <div className="my-repositories">
       <ul data-testid="repository-list">
         {
           (myRepositories.map(repository => (
@@ -54,8 +54,7 @@ export default function App() {
           )))
         }
       </ul>
-
-      <button onClick={handleAddRepository}>Adicionar</button>
+      <button onClick={() => handleAddRepository() }>Adicionar</button>
     </div>
   );
 }
